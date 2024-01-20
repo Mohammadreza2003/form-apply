@@ -35,11 +35,11 @@ function App() {
           <div className="flex border-b-2 border-black justify-center ml-[5.5rem] mb-2">
             مشخصات متقاضی
           </div>
-          <div className="flex  items-center">
+          <div className="flex  items-center ">
             <p className="mr-[2px] ml-[160px]">نام:</p>
             <p className="mr-[2px] ml-[160px]">نام خانوادگی:</p>
             <p className="mr-[2px] ml-[160px]">کد ملی:</p>
-          </div>
+          </div> 
           <div className="flex  items-center">
             <p className="mr-[2px] ml-[160px]">مقطع تحصیلی:</p>
             <p className="mr-[2px] ml-[160px]">رشته تحصیلی:</p>
