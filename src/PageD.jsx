@@ -15,7 +15,20 @@ const PageD = () => {
               <p>D</p>
             </div>
           </div>
-          
+          <div className="flex flex-col  items-center w-[58.99rem] h-[5.14rem]">
+            <div className="flex justify-start ">
+              <p className="self-start pl-[12rem]">عنوان پست:</p>
+              <p className="self-start pl-[12rem]">حوزه شغلی:</p>
+              <p className="self-start pl-[12rem]">کد شغل:</p>
+            </div>
+            <br />
+            <br />
+            <div className="flex justify-start mt-[-2rem]">
+              <p className="self-start pl-[12rem]">حداقل تحصیلات:</p>
+              <p className="self-start pl-[12rem]">رشته/گرایش:</p>
+              <p className="self-start pl-[12rem]">حداقل سابقه:</p>
+            </div>
+          </div>
         </Page>
       </>
     );
