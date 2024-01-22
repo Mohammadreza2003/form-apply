@@ -6,7 +6,7 @@ export default function Page({ children, className, pageNumber, isInnerPage = tr
         jobTitle = baseInfo.jobTitle;
     }
     return (
-        <div className="relative flex justify-center items-center p-10 w-[990px] max-w-[990px] max-h-[1404px] h-[1404px] border border-solid border-gray-300 shadow-sm rounded m-auto">
+        <div className="relative flex justify-center items-center p-10 w-[1026px] max-w-[1026px] max-h-[1404px] h-[1404px] border border-solid border-gray-300 shadow-sm rounded m-auto">
             {isInnerPage ?
                 <div className="border-2 border-solid border-orange-500 h-[1320px] w-full">
                     <div className="relative w-full h-6 bg-orange-500 mt-6 px-12 text-white">
