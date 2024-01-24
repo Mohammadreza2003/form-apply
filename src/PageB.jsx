@@ -5,14 +5,19 @@ const PageB = () => {
   return (
     <>
       <Page isInnerPage={false}>
-        <div className="flex border-2 border-black items-center mb-[0.25rem] mt-[0.25rem]">
+        <div class="flex border-2 border-black items-center justify-between h-[80px]">
           <img
             src="../report/logo.jpg"
-            className="w-18 h-16  ml-[262px] mr-[5px] mb-[5px]"
+            class="w-18 h-16 ml-4 rounded mr-[5px]"
+            alt="Company Logo"
           />
-          <p className="text-xm">فرم انتخاب و استخدام</p>
-          <div className="bg-black text-white w-[3.25rem] h-[5rem] mr-[26.75rem] ">
-            <p>B</p>
+          <div class="flex flex-col justify-center ml-4">
+            <p class="text-lg font-semibold mb-2">فرم آموزش و بهسازی کارکنان</p>
+          </div>
+          <div class="flex items-center">
+            <div class="bg-black text-white flex items-center justify-center w-[45px] h-[76px]">
+              <p class="text-xl">B</p>
+            </div>
           </div>
         </div>
         <div className="flex flex-col  items-center w-[58.99rem] h-[5.14rem]">
@@ -31,7 +36,7 @@ const PageB = () => {
         </div>
 
         <div>
-          <table className="w-[58.99rem] ">
+          <table className="w-[56.78rem]">
             <thead className="bg-neutral-400 border-2 border-black ">
               <tr>
                 <th className="border-2 border-black text-[0.90rem]">
@@ -53,12 +58,12 @@ const PageB = () => {
                     <tr>
                       <th className="  text-[0.90rem]">عنوان برنامه</th>
                       <th className="border-l-2 border-black  text-[0.90rem]">
-                        عنوان برنامه
+                         مدت 
                       </th>
                       <th className=" border-l-2 border-black text-[0.90rem]">
-                        عنوان برنامه
+                        تاریخ
                       </th>
-                      <th className="  text-[0.90rem]">عنوان برنامه</th>
+                      <th className="  text-[0.90rem]">محل دوره </th>
                     </tr>
                   </thead>
                 </div>
@@ -355,7 +360,7 @@ const PageB = () => {
             را فراهم نمایید.
           </p>
           <p className="mb-1 mr-[0.75rem] text-sm">
-           *  درجه اولویت (۱) بیانگر بیشترین حد نیاز بوده و سایر موارد در اولویت
+            * درجه اولویت (۱) بیانگر بیشترین حد نیاز بوده و سایر موارد در اولویت
             های بعدی قرار دارند.
           </p>
         </div>

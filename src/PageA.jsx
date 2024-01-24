@@ -5,55 +5,63 @@ const PageA = () => {
   return (
     <>
       <Page isInnerPage={false}>
-        <div className="flex border-2 border-black items-center mb-[0.25rem] mt-[0.25rem]">
+        <div class="flex border-2 border-black items-center justify-between h-[80px] mb-1">
           <img
             src="../report/logo.jpg"
-            className="w-18 h-16  ml-[262px] mr-[5px] mb-[5px]"
+            class="w-18 h-16 ml-4 rounded mr-[5px]"
+            alt="Company Logo"
           />
-          <p className="text-xm">فرم انتخاب و استخدام</p>
-          <div className="bg-black text-white w-[3.25rem] h-[5rem] mr-[26.75rem] ">
-            <p>A</p>
+          <div class="flex flex-col justify-center ml-4">
+            <p class="text-lg font-semibold mb-2">فرم انتخاب و استخدام</p>
+          </div>
+          <div class="flex items-center">
+            <div class="bg-black text-white flex items-center justify-center w-[45px] h-[76px]">
+              <p class="text-xl">A</p>
+            </div>
           </div>
         </div>
-        <div className="flex flex-col border-2 border-black items-center w-[58.99rem] h-[5.14rem]">
+
+        <div className="flex flex-col border-2 border-black items-center  h-[5.14rem] mb-1">
           <div className="flex border-b-2 border-black self-start ml-[5.5rem] mb-2 rotate-90 text-xs mr-[-2rem] mt-[1.89rem]">
             مشخصات شغل
           </div>
-          <div className="flex justify-start mt-[-3rem]">
-            <p className="self-start pl-[12rem]">عنوان پست:</p>
-            <p className="self-start pl-[12rem]">حوزه شغلی:</p>
-            <p className="self-start pl-[12rem]">کد شغل:</p>
-          </div>
-          <br />
-          <br />
-          <div className="flex justify-start mt-[-2rem]">
-            <p className="self-start pl-[12rem]">حداقل تحصیلات:</p>
-            <p className="self-start pl-[12rem]">رشته/گرایش:</p>
-            <p className="self-start pl-[12rem]">حداقل سابقه:</p>
+          <div className="flex flex-col items-start gap-4">
+            <div className="flex justify-start mt-[-3rem]">
+              <p className="pl-[12rem] self-start">عنوان پست:</p>
+              <p className="pl-[12rem] self-start">حوزه شغلی:</p>
+              <p className="pl-[12rem] self-start">کد شغل:</p>
+            </div>
+            <div className="flex justify-start">
+              <p className="pl-[12rem] self-start">حداقل تحصیلات:</p>
+              <p className="pl-[12rem] self-start">رشته/گرایش:</p>
+              <p className="pl-[12rem] self-start">حداقل سابقه:</p>
+            </div>
           </div>
         </div>
-        <div className="flex flex-col border-2 border-black items-center mb-[0.25rem] mt-[0.25rem] w-[58.99rem] h-[6.12rem]">
-          <div className="flex border-b-2 border-black  ml-[6rem] mb-2 rotate-90 self-start text-xs mr-[-2rem] mt-[2.3rem]">
-            مشخصات متقاضی
+        <div className="flex flex-col border-2 border-black items-center  h-[5.14rem] mb-1">
+          <div className="flex border-b-2 border-black self-start ml-[5.5rem] mb-2 rotate-90 text-xs mr-[-2rem] mt-[1.89rem]">
+            مشخصات فردی
           </div>
-          <div className="flex justify-start mt-[-3rem]">
-            <p className="self-start pl-[12rem]">نام:</p>
-            <p className="self-start pl-[12rem]">نام خانوادگی:</p>
-            <p className="self-start pl-[12rem]">کد ملی:</p>
-          </div>
-          <br />
-          <br />
-          <div className="flex justify-start mt-[-2rem]">
-            <p className="self-start pl-[12rem]">مقطع تحصیلی:</p>
-            <p className="self-start pl-[12rem]">رشته تحصیلی:</p>
-            <p className="self-start pl-[12rem]">سابقه:</p>
+          <div className="flex flex-col items-start gap-4 ">
+            <div className="flex justify-start mt-[-3rem]">
+              <p className="pl-[12rem]">نام:</p>
+              <p className="pl-[12rem]">نام خانوادگی:</p>
+              <p className="pl-[12rem]">کد ملی:</p>
+            </div>
+            <div className="flex justify-start ">
+              <p className="pl-[12rem]">مقطع تحصیلی:</p>
+              <p className="pl-[12rem]">رشته تحصیلی:</p>
+              <p className="pl-[12rem]">سابقه:</p>
+            </div>
           </div>
         </div>
         <div>
-          <table className="w-[57.50rem] mr-[24px]">
+          <table className="w-[56.78rem]">
             <thead className="bg-neutral-400 border-2 border-black ">
               <tr>
-                <th className="border-2 border-black">شرایط احراز</th>
+                <th className="border-t-2 border-black border-b-2 border-black border-l-2 border-black">
+                  شرایط احراز
+                </th>
                 <th className="border-2 border-black">حد پذیرش</th>
                 <th className="border-2 border-black">وزن</th>
                 <th className="border-2 border-black">ابزار سنجش</th>
@@ -69,7 +77,12 @@ const PageA = () => {
               </tr>
             </thead>
             <br />
-            <tbody className="border-2 border-black mr-[24px]">
+            <tbody className="border-2 border-black ">
+              <tr className="border-b-2 border-black border-t-2 border-black">
+                <td className="border-r-2 border-black">پایه</td>
+              </tr>
+            </tbody>
+            <tbody className="border-2 border-black ">
               <tr className="border-b-2 border-black border-t-2 border-black">
                 <td className="border-r-2 border-black">تحصیلات</td>
                 <td className="border-r-2 border-black">لیسانس</td>
@@ -96,6 +109,13 @@ const PageA = () => {
               </tr>
             </tbody>
             <br />
+            <tbody className="border-2 border-black ">
+              <tr className="border-b-2 border-black border-t-2 border-black">
+                <td className="border-r-2 border-black">
+                  ویژگی های روانشناختی
+                </td>
+              </tr>
+            </tbody>
             <tbody className="border-2 border-black">
               <tr className="border-b-2 border-black">
                 <td className="border-r-2 border-black">ثبات هیجانی</td>
@@ -141,6 +161,11 @@ const PageA = () => {
               </tr>
             </tbody>
             <br />
+            <tbody className="border-2 border-black ">
+              <tr className="border-b-2 border-black border-t-2 border-black">
+                <td className="border-r-2 border-black">مهارت های شغلی</td>
+              </tr>
+            </tbody>
             <tbody className="border-2 border-black">
               <tr className="border-b-2 border-black">
                 <td className="border-r-2 border-black">مهارت های کامپیوتری</td>
@@ -203,7 +228,12 @@ const PageA = () => {
           </table>
         </div>
         <br />
-        <table className="w-[57.50rem] mr-[24px]">
+        <tbody className=" ">
+          <tr className="border-2 border-black ">
+            <td className="border-2 border-black">جمعبندی</td>
+          </tr>
+        </tbody>
+        <table className="w-[56.78rem]">
           <thead className="border-2 border-black ">
             <tr>
               <th className="border-2 border-black">
@@ -226,7 +256,7 @@ const PageA = () => {
           </tbody>
         </table>
 
-        <div className="flex  flex-col items-start justify-start self-start border-2 border-black mb-[0.25rem] mt-[0.25rem] w-[] h-[19.12rem] mr-[24px]">
+        <div className="flex  flex-col items-start justify-start self-start border-2 border-black mb-[0.25rem] mt-[0.25rem]  h-[19.12rem] ">
           <p className="mb-1 mr-[0.75rem] text-sm">
             *نمره ستون امتیاز در همه موارد به غیر از موارد زیر از ۱۰۰ می باشد.
           </p>
@@ -266,10 +296,12 @@ const PageA = () => {
           </p>
         </div>
         <div>
-          <table className="w-[57.50rem] mr-[24px]">
+          <table className="w-[56.78rem]">
             <thead className="border-2 border-black ">
               <tr>
-                <th className="border-2 border-black">مصاحبه کننده ها</th>
+                <th className="border-2 border-black w-[302px]">
+                  مصاحبه کننده ها
+                </th>
                 <th className="border-2 border-black">
                   اداره کل توسعه منابع انسانی و پشتیبانی
                 </th>
